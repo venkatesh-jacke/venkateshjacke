@@ -1,0 +1,12 @@
+#wel {
+  color: rgb(255, 255, 255);
+}
+body {
+  background-color: #111927;
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(304.46, 97%, 51%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
+}

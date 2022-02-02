@@ -1,0 +1,21 @@
+body {
+  background-image: url("../img/bg.gif");
+}
+.text-center {
+  color: rgb(255, 255, 255);
+}
+label {
+  color: white;
+}
+.form-control#name {
+  width: 400px;
+}
+.form-control#email {
+  width: 400px;
+}
+.form-control#phone {
+  width: 400px;
+}
+.form-control#msg {
+  width: 500px;
+}
