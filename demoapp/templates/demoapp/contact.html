@@ -4,16 +4,19 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+
+  />
 
     <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
 
@@ -119,13 +122,37 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
 
-    <footer class="page-footer font-small blue">
-      <div
+    <footer>
+
+      <div class="footer-content mb-4">
+
+
+          <div class="social-menu" align="center">
+
+
+              <ul>
+                  <li><a href="https://www.facebook.com/venkatesh.jacke" target="__blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/VenkateshJacke" target="__blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/venkateshjacke/" target="__blank"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/venkatesh-jacke" target="__blank"><i class="fa fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/venkatesh-e-700a41204/" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a  href="mailto:venkateshjacke@gmail.com" target="__blank"><i class="fa fa-google"></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom" align="center">
+              
+
+
+          </div>
+
+  </footer>
+    
+   
+      {% comment %} <div
         class="footer-copyright text-center bg-black text-light position-absolute fixed-bottom"
       >
         © 2022 Copyright - All Rights Reserved
-      </div>
-    </footer>
+      </div> {% endcomment %}
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
