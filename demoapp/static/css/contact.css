@@ -1,30 +1,15 @@
 body {
   background-image: url("../img/bg.gif");
 }
-.text-center {
-  color: rgb(255, 255, 255);
+strong {
+  color: #fff;
 }
-label {
-  color: white;
-}
-.form-control#name {
-  width: 400px;
-}
-.form-control#email {
-  width: 400px;
-}
-.form-control#phone {
-  width: 400px;
-}
-.form-control#msg {
-  width: 500px;
-}
-
 footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+
   background: rgb(0, 0, 0);
   height: auto;
   width: 100vw;

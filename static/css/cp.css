@@ -1,9 +1,10 @@
 body {
-  background-image: url("../img/bg.gif");
+  background-image: url(../img/wuc.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-strong {
-  color: #fff;
-}
+
 footer {
   position: absolute;
   bottom: 0;

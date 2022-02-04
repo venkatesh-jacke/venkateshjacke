@@ -1,8 +1,8 @@
 body {
-  background-image: url("../img/bg.gif");
-}
-strong {
-  color: #fff;
+  background-image: url(../img/wuc.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 footer {
   position: absolute;
