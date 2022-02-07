@@ -1,12 +1,12 @@
 body {
-  background-image: url("../img/bg.gif");
   position: relative;
   padding-bottom: 150px;
   min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1604964432806-254d07c11f32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.text-center {
-  background-color: rgb(0, 0, 0);
-}
+
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }

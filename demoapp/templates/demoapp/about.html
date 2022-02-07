@@ -1,323 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
+  {% load static %}
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://mdbootstrap.com/api/snippets/static/download/MDB5-Pro-Advanced_3.10.1/css/mdb.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://mdbootstrap.com/api/snippets/static/download/MDB5-Pro-Advanced_3.10.2/plugins/css/all.min.css"
+    />
 
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
 
-  <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <title>About</title>
+  </head>
 
-
-  <title>About</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Venkatesh E</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/competitiveprogramming">Competitive Pogramming</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact me</a>
-          </li>
-        </ul>
-      </div>
-      <a href="{% static 'files/resume.pdf' %}" download rel="noopener noreferrer" target="_blank">
-        <button type="button" class="btn btn-primary">My Resume</button>
-      </a>
-    </div>
-  </nav>
-
-
-
-  <section class="main-content">
-    <div class="section" id="part1">
-      <img src="{% static 'img/jacke.jpg' %}" id="mypic" alt="about" class="img-fluid" />
-      <h5> Software Developer</h5>
-      <img src="{% static 'img/location.png' %}" id="location" class="pic" />
-      <a href="https://maps.app.goo.gl/iditPMZYmnkMEAZo8" target="__blank">Chennai,India</a><br />
-      <img src="{% static 'img/call.png' %}" id="call" class="pic" />
-      <a href="tel:+918807161938">+91 8807161938</a><br />
-      <p>An articulate and quick<br>
-        thinking young individual<br>
-        with a problem solving<br>
-        mindset. Also fond of<br>
-        Network&Cybersecurity also<br>
-        acing the journey of<br>
-        competitive programming.<br>
-        currenlty working as<br>
-        an Intern at <a href="https://www.verizon.com/" target="__blank"><img src="{% static 'img/verizon.png' %}"
-            alt="" height="20" width="90"></a>
-      </p>
-
-    </div>
-    <div class="section" id="part2">
-      <h3>My Education</h3>
-      <div class="study" id="college">
-        <a href="https://www.veltech.edu.in/" target="__blank"><img src="{% static 'img/veltech.jfif' %}" align="left"
-            class="logo" id="veltechlogo"></a>
-        <p class="desc">
-          <b>VelTech University</b><br>
-          <b>Chennai,India</b><br>
-          <b>B.Tech in Computer Science</b><br>
-          <b>2022</b><br>
-        </p>
-      </div>
-      <div class="study" id="school">
-        <a href="https://danielthomasschool.org/" target="__blank"><img src="{% static 'img/daniel.png' %}" align="left"
-            class="logo" id="daniellogo"></a>
-        <p class="desc">
-          <b>Daniel Thomas Mat Hr Sec School</b><br>
-          <b>Chennai,India</b><br>
-          <b>HSC-2018</b><br>
-          <b>SSLC-2016</b><br>
-
-        </p>
-      </div>
-      <h3>My Internship</h3>
-      <div class="intern" id="cisco">
-        <img src="{% static 'img/cisco.jpg' %}" align="left" class="logo" id="ciscologo">
-        <p class="desc">
-          <b>Cyber Security Virtual Internship Program</b><br>
-          <b>Cisco Networking Academy</b><br>
-          <b>2021</b><br>
-          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">Credential</button>
-
-          <!--Bootstrap modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content" id="ciscocerificatecontent">
-              <!-- Modal heading -->
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  CISCO
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">
-                    ×
-                  </span>
-                </button>
-              </div>
-
-              <!-- Modal body with image -->
-              <div class="modal-body">
-                <img src="{% static 'img/ciscointern.jpg' %}" height="600" width="500" id="ciscointern">
-              </div>
-            </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Venkatesh E</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/competitiveprogramming"
+                  >Competitive Pogramming</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact me</a>
+              </li>
+            </ul>
           </div>
+          <a
+            href="{% static 'files/resume.pdf' %}"
+            download
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              My Resume
+            </button>
+          </a>
         </div>
-        </p>
+      </nav>
+    </header>
+    <main></main>
+
+    <footer class="bg-black text-center text-white pt-3">
+      <!-- Grid container -->
+      <h3>Connect me</h3>
+      <div class="container p-0 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-1 pt-10">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
       </div>
-      <div class="intern" id="cisco">
-        <img src="{% static 'img/aws.jpg' %}" align="left" class="logo" id="awscologo">
-        <p class="desc">
-          <b>AWS Virtual Internship Program</b><br>
-          <b>aws Academy</b><br>
-          <b>2021</b><br>
-          <button type="button" class="btn btn-link" data-toggle="modal"
-            data-target="#exampleModal2">Credential</button>
+      <!-- Grid container -->
 
-          <!--Bootstrap modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content" id="ciscocerificatecontent">
-              <!-- Modal heading -->
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel2">
-                  AWS
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">
-                    ×
-                  </span>
-                </button>
-              </div>
-
-              <!-- Modal body with image -->
-              <div class="modal-body">
-                <img src="{% static 'img/awsintern.jpg' %}" height="600" width="500" id="awsintern">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </p>
+      <!-- Copyright -->
+      <div class="text-center p-1-fluid" style="background-color: black">
+        © 2020 Copyright:
+        <a class="text-white" href="#">Venkateshjacke</a>
       </div>
-    </div>
-    </div>
+      <!-- Copyright -->
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-
-    <div class="section" id="part3">
-      <h3>My Courses</h3>
-      <div class="course" id="coursera">
-        <img src="{% static 'img/coursera.png' %}" alt="100" width="100">
-        <a href="https://www.coursera.org/user/d2fd0ef90c05e3358d8e7ff50352e822" target="__blank" class=""> <button
-            type="button" class="btn btn-primary btn-sm">View
-            Cerificates</button></a>
-
-        <ul>
-          <li>Developing Android Apps with App Inventor
-          </li>
-          <li>Linux Server Management and Security</li>
-          <li>Data Structures</li>
-          <li>Algorithmic Toolbox</li>
-
-
-        </ul>
-
-
-
-      </div>
-      <div class="course" id="ciscocourse">
-        <img src="{% static 'img/cis.jfif' %}" alt="100" width="100">
-        <a href="https://drive.google.com/drive/folders/1cSVhaqnpMEodgK-IeJ4TWad0a8xlajF8?usp=sharing" target="__blank"
-          class=""> <button type="button" class="btn btn-primary btn-sm">View
-            Cerificates</button></a>
-
-
-        <ul>
-          <li>Cybersecurity Essentials
-          </li>
-          <li>Introduction to Networks</li>
-          <li>NDG LINUX ESSENTIALS
-          </li>
-          <li>Algorithmic Toolbox</li>
-
-
-        </ul>
-      </div>
-      <div class="languages">
-        <h3>Spoken Languages</h3>
-        <ul style="list-style-type: none">
-
-          <li>
-
-            <img src="{% static 'img/english.jfif' %}" class="lang" alt="" height="50" width="90"><progress id="file"
-              max="100" value="100"> 100% </progress>
-          </li>
-          <li><img src="{% static 'img/tamil.jfif' %}" class="lang" alt="" height="50" width="90"><progress id="file"
-              max="100" value="100"> 100% </progress></li>
-          <li><img src="{% static 'img/hindi.jfif' %}" class="lang" alt="" height="50" width="90"><progress id="file"
-              max="100" value="70"> 70% </progress></li>
-        </ul>
-      </div>
-
-
-    </div>
-    </div>
-    </div>
-
-
-    </div>
-    <div class="section" id="part4">
-      <h3>Technical Skills</h3>
-      <div class="frontend">
-        <h5>Front-End</h5>
-        <img src="{% static 'img/html.png' %}" alt="" class="logo"> &nbsp;&nbsp; <img src="{% static 'img/css.png' %}"
-          alt="" class="logo"> &nbsp;&nbsp; <img src="{% static 'img/bootstrap.png' %}" alt="" class="logo">
-      </div>
-      <div class="backtend">
-        <h5>Back-End</h5>
-        <img src="{% static 'img/c++.png' %}" alt="" class="logo"> &nbsp;&nbsp;<img src="{% static 'img/python.jfif' %}"
-          alt="" class="logo"> &nbsp;&nbsp;<img src="{% static 'img/js.jfif' %}" alt="" class="logo">
-      </div>
-      <div class="Framework">
-        <h5>FrameWork</h5>
-        <img src="{% static 'img/bootstrap.png' %}" alt="" class="logo"> &nbsp;&nbsp;<img
-          src="{% static 'img/django.jpg' %}" alt="" class="logo">
-      </div>
-      <div class="databasse">
-        <h5>Databases</h5>
-        <img src="{% static 'img/mysql.png' %}" alt="" class="logo">
-      </div>
-    </div>
-    <div class="section" id="part4">
-      <h3> My Work Experience</h3>
-      <div class="ring">Loading
-        <span id="load"></span>
-      </div>
-</body>
-</div>
-
-</section>
-
-
-
-<div id="connections" class="connectme bg-black text-light  position-relative px-0 " align="center">
-  <h2 class="connect">Connect with me</h2>
-
-  <a href="https://www.facebook.com/venkatesh.jacke" target="_blank"><img src="{% static 'img/fbb.png' %}"
-      class="img-circle" alt="my pic" width="50" height="50"></a>
-  <a href="https://www.instagram.com/venkateshjacke/" target="_blank"><img src="{% static 'img/insta.png' %}"
-      class="img-circle" alt="my pic" width="50" height="50"></a>
-  <a href="https://www.linkedin.com/in/venkatesh-e-700a41204/" target="_blank"><img
-      src="{% static 'img/linkidin.png' %}" class="img-circle" alt="my pic" width="50" height="50"></a>
-  <a href="https://github.com/venkatesh-jacke" target="_blank"><img src="{% static 'img/git.png' %}" class="img-circle"
-      alt="my pic" width="50" height="50"></a>
-  <a href="https://twitter.com/VenkateshJacke" target="_blank"><img src="{% static 'img/twitter.jfif' %}"
-      class="img-circle" alt="my pic" width="50" height="50"></a>
-  <a href="mailto:venkateshjacke@gmail.com" target="_blank"><img src="{% static 'img/gmail.jpg' %}" class="img-circle"
-      alt="my pic" width="50" height="50"></a>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="page-footer font-small blue">
-  <div class="footer-copyright text-center bg-black text-light position-absolute fixed-bottom">
-    © 2022 Copyright - All Rights Reserved
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

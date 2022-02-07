@@ -10,3 +10,7 @@ body {
     ),
     radial-gradient(at 82% 65%, hsl(218, 39%, 11%) 0, transparent 55%);
 }
+.card {
+  margin-left: auto;
+  margin-right: auto;
+}

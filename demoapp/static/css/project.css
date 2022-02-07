@@ -1,13 +1,17 @@
-body {
-  background-image: url(../img/wuc.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  position: absolute;
-}
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.navbar {
+  min-width: 100vw;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../img/projectbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -194,4 +198,22 @@ footer {
 }
 .social-menu ul li:nth-child(6) a:hover {
   background-color: #da1212;
+}
+#parent {
+  background-color: deeppink;
+  width: 50%;
+  float: left;
+  margin: 1rem;
+}
+.btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
 }

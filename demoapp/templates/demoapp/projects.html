@@ -36,8 +36,10 @@
       rel="stylesheet"
       href="https://mdbootstrap.com/api/snippets/static/download/MDB5-Pro-Advanced_3.10.2/plugins/css/all.min.css"
     />
+
     <link rel="stylesheet" href="{% static 'css/project.css' %}" />
-    <title>About</title>
+
+    <title>Projects</title>
   </head>
 
   <body>
@@ -81,70 +83,106 @@
       </nav>
     </header>
     <main>
-      <h3>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum at
-        beatae, vitae voluptatum facilis tenetur! Quae magnam, vero autem
-        dolores impedit dolorem excepturi necessitatibus quibusdam itaque
-        eveniet ullam nesciunt perspiciatis. Dolorem reprehenderit, veritatis
-        excepturi delectus consectetur aliquid velit aperiam aspernatur, laborum
-        similique labore quia provident id dolore unde adipisci quibusdam beatae
-        rem. Necessitatibus minima praesentium ea. Sunt explicabo fugit
-        deleniti. Suscipit Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Sequi sit excepturi at ex molestiae, aperiam libero quia?
-        Perferendis, quam debitis neque itaque sint commodi eligendi ut quidem,
-        iste velit laboriosam. Aut architecto laborum, atque sit fugit voluptate
-        sint mollitia? Dolorem hic voluptatum officiis, ipsa distinctio
-        excepturi llorem*10aboriosam, sapiente numquam quidem sequi dolore
-        nesciunt unde voluptatem repudiandae adipisci mollitia temporibus ea.
-        Est reprehenderit eligendi non eius qui amet omnis iste temporibus
-        aliquid nulla. Tempore nesciunt aliquam veniam quisquam veritatis magnam
-        aliquid pariatur fugit? Sed molestias voluptatibus est corporis soluta
-        ad labore. Optio, esse aspernatur! Blanditiis repellendus atque,
-        impedit, repudiandae harum tempore vitae non dignissimos explicabo
-        voluptate quibusdam aliquid pariatur suscipit? Nisi laudantium cum atque
-        doloribus, adipisci voluptatum perferendis hic accusantium qui! Porro
-        iure libero dolorem dolor, quo numquam. Consequatur, quaerat accusamus
-        iste, nihil commodi voluptatem quasi nesciunt corrupti hic Lorem ipsum
-        dolor, sit amet consectetur adipisicing elit. Iste dolorum eveniet aut,
-        soluta voluptatem laborum sed nostrum adipisci laboriosam rerum
-        exercitationem maiores totam quidem pariatur veniam accusantium id?
-        Nesciunt, qui. Nihil eveniet aut aperiam delectus eos hic sint,
-        praesentium recusandae doloremque, ipsa consectetur, dolores rerum.
-        Dicta veniam est quae accusantium vel cupiditate, asperiores
-        perspiciatis facere repellat ut quo iure recusandae. Debitis quos, eaque
-        amet repellat accusantium obcaecati voluptate ex natus sint quam
-        perspiciatis et corrupti, consequuntur deserunt totam velit minima minus
-        asperiores quaerat quod suscipit fuga soluta nihil. Suscipit, quod.
-        Distinctio nisi quod magni nostrum porro quam cum inventore
-        reprehenderit exercitationem tempore delectus natus quisquam, libero
-        neque numquam voluptas quaerat iusto nesciunt esse soluta dolore ab at
-        sint? Numquam, quis. Maxime dolorem eius quas unde incidunt repudiandae
-        commodi, ullam, ex autem accusamus quam nostrum tempore dignissimos
-        cupiditate saepe! Odit distinctio unde ut voluptates deserunt autem?
-        Repellendus molestiae ducimus eaque neque. Minima, facere! Velit
-        laudantium perspiciatis voluptas ipsam laborum aliquid fugiat id
-        mollitia eveniet saepe! Dolor earum unde at modi ad vel enim fuga,
-        officia non soluta voluptatum omnis, quasi quam? Totam officia aut
-        minima obcaecati! Cumque sed tempora corrupti vero dolor eligendi nisi,
-        voluptatem quis impedit soluta autem animi placeat tenetur quibusdam
-        perferendis harum quidem, atque laborum ut officia aperiam. Dolor
-        laborum sequi eum ipsam nihil temporibus a quam quibusdam dignissimos
-        sint, soluta mollitia aspernatur tempore non sapiente assumenda porro
-        totam enim quaerat consequatur perspiciatis praesentium? Cupiditate
-        provident accusantium nesciunt? Incidunt assumenda natus a omnis nemo,
-        aut ipsa, amet sint quidem cumque numquam id repellat architecto
-        voluptatum modi quam similique, quaerat vel nesciunt sit. Maiores et
-        exercitationem similique reiciendis libero? Vel rerum sed pariatur
-        praesentium, alias non, ipsa vitae sint adipisci rem autem dolorum
-        labore et ducimus repudiandae fugit animi assumenda. Asperiores culpa
-        odio repellendus assumenda dolore, ratione pariatur
-        temporibus.laudantium, ducimus voluptatibus quidem. Excepturi quidem
-        ullam magnam repellat! Debitis, laboriosam vel? velit nemo omnis fugiat
-        illo, quae, blanditiis in rem animi, iusto similique et impedit?
-        Mollitia assumenda esse quos, excepturi tenetur deserunt eveniet
-        expedita voluptate nisi, sint iste, unde officia.
-      </h3>
+      <div class="conatiner" id="parent">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="{% static 'img/cric.png' %}"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body d-inline-block">
+                  <h5 class="card-title">
+                    Super Predictor of Indian Premier League (IPL)
+                  </h5>
+                  <p class="card-text">
+                    The proposed solution is used to predict the outcome of IPL
+                    seasons from 2008-2019
+                  </p>
+                  <a
+                    href="https://github.com/venkatesh-jacke/SBSPS-Challenge-5230-Super-Predictor-of-Indian-Premier-League-IPL-"
+                    target="__blank"
+                    class="btn btn-primary"
+                    >Go To View</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="{% static 'img/ai.jpg' %}"
+                height="374"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Anti-Threat Framework</h5>
+                  <p class="card-text">
+                    To propose a solution to detect and prevent cyber attacks on
+                    AI models. Just a glimpse of the concept.
+                  </p>
+                  <a
+                    href="https://github.com/venkatesh-jacke/Anti-Threat-Framework-idea-submission-"
+                    target="__blank"
+                    class="btn btn-primary"
+                    >Go To View</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="{% static 'img/bookshop.png' %}"
+                height="374"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Online Book Shop</h5>
+                  <p class="card-text">
+                    The Website is completely developed using
+                    HTML,CSS,PHP,MYSQL.
+                  </p>
+                  <a
+                    href="https://github.com/venkatesh-jacke/online-book-store"
+                    target="__blank"
+                    class="btn btn-primary"
+                    >Go To View</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </main>
+
     <footer class="bg-black text-center text-white pt-3">
       <!-- Grid container -->
 
@@ -157,6 +195,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

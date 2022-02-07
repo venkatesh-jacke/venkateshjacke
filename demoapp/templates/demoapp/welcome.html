@@ -14,6 +14,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     <link rel="stylesheet" href="{% static 'css/welcome.css' %}" />
     <title>Welcome</title>
   </head>
@@ -131,10 +133,10 @@
 
     <div class="container my-3">
       <h2 id="wel">
-        <center>Welcome To My Site :)</center>
+        <center>Welcome To My Site :) <i class="fa fa-heart" style="font-size:48px;color:red"></i></center>
       </h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding-bottom: 10px">
           <div class="card" style="width: 18rem">
             <img
               src="{% static 'img/cyber.jpg' %}"
@@ -151,12 +153,13 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding-bottom: 10px">
           <div class="card" style="width: 18rem">
             <img
               src="{% static 'img/sd.jfif' %}"
               class="card-img-top"
               alt="..."
+              height="309px"
             />
             <div class="card-body">
               <h6 class="card-title">Software Developement</h6>
@@ -168,12 +171,13 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" style="padding-bottom: 10px">
           <div class="card" style="width: 18rem">
             <img
-              src="{% static 'img/cisco.jpg' %}"
+              src="{% static 'img/cisco.jfif' %}"
               class="card-img-top"
               alt="..."
+              height="309px"
             />
             <div class="card-body">
               <h6 class="card-title">Networking</h6>
